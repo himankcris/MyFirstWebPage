@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>My First Page</title>
+        <link rel="icon" type="image/x-icon" href="football.png">
+        <Style>
+            html,body{
+                padding:0;
+                margin:0;
+                /* font-size:100%; */
+                
+            }
+            /* body{
+                background-image:url("5.jpg")
+            } */
+
+            header{
+                background-color: bisque;
+                color : rgba(238, 10, 10, 0.423);
+                text-align:center;
+                height : 80px;
+                padding : 50px;
+                
+                }
+            nav{
+                background-color: rgb(255, 196, 208);
+                color : red;
+                text-align:center;
+                height : 20px;
+                padding : 10px;
+            }
+            .flexbox{
+                display:flex;
+                min-height: 100vh;
+            }
+            aside{
+                background-color: rgb(149, 207, 251);
+                color : rgb(22, 1, 1);
+                text-align:center;
+                /* font-size:medium; */
+                /* height : 800px; */
+                width : 300px;
+            }
+            img{
+                box-shadow:5px 5px 5px rgb(0,0,0,.5);
+                 /* -5px -5px 5px rgb(0,0,0,.5); */
+                box-sizing:border-box;              
+            }
+            .bgimage {
+                position: relative;
+                 /* Needed for absolute positioning of ::before */
+                flex: 1;
+            }
+
+            .bgimage::before {
+                content: "";
+                position: absolute; /* Position it inside .bgimage */
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+
+                background-image: url("07.jpg"); /* Ensure the path is correct */
+                background-size: cover;
+                background-position: center;
+    
+                /* opacity: ; Adjust for transparency */
+    
+                background-color: rgba(255, 254, 254, 0.5); /* Dark overlay */
+                mix-blend-mode: multiply;
+
+                z-index: -1; /* Moves the pseudo-element behind the content */
+}
+                .color{
+                    color:white;
+                    text-align:center;
+                    background-color:black;
+                    opacity:0.7;
+                    /* height:50%; */
+                    width:50%; 
+                    margin-top:300px;
+                    margin-left:auto;
+                    margin-right:auto;
+             
+                }
+
+            
+            #four{
+                height:100px;
+                background-image:linear-gradient(to bottom right,pink,purple);
+                text-align:center;
+                padding:20px;
+                /* border-collapse: collapse; */
+            }
+            nav{
+                
+            }
+            #decoration{
+                display:flex;
+                justify-content:space-around;
+                align-items:center;
+                box-shadow:5px 10px 10px red;
+                top:0;
+                width:100%;
+                z-index:1;
+                background-color:red;
+    
+            }
+            
+
+        </Style>
+    </head>
+    <body>
+        <header>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Natus eius ipsa, aliquid voluptates exercitationem totam dolorem fugit quia debitis assumenda?
+        </header>
+        <nav>
+            <div>
+            <a id="decoration" href="https://training.tutorialspoint.com/">HOME</a>
+            <a id="decoration" href="https://www.google.com/">ABOUT</a>
+            <a id="decoration" href="https://www.google.com/">CONTACT</a>
+            <a id="decoration" href="https://www.google.com/">SERVICES</a>
+            <a id="decoration" href="https://www.google.com/">Home</a>
+            </div>
+        </nav>
+        <div class="flexbox">
+        <aside>
+            
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, ut.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Porro omnis enim laborum officia dolore neque?<br>
+            <img src="D:\WEBD\6703983.jpg" width="150"><br>
+            <cite>Goat</cite>
+        </aside>
+        <main class="bgimage">
+        <div class="color">
+        <article>
+            content1
+        </article>
+        <article>
+            content2
+        </article>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum libero facilis tenetur repudiandae. Eos incidunt a,
+             tenetur nesciunt dolores nostrum eius dicta perferendis, veritatis amet nulla aliquid veniam at. Ad?
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum libero facilis tenetur repudiandae. Eos incidunt a,
+             tenetur nesciunt dolores nostrum eius dicta perferendis, veritatis amet nulla aliquid veniam at. Ad?
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum libero facilis tenetur repudiandae. Eos incidunt a,
+             tenetur nesciunt dolores nostrum eius dicta perferendis, veritatis amet nulla aliquid veniam at. Ad?
+        </p>
+        
+        </div>
+
+    </main>
+    
+</div>
+<footer id="four">
+    Cristiano Ronaldo dos Santos Aveiro is a Portuguese professional footballer who 
+    plays as a forward for and captains both Saudi Pro League club Al Nassr and the Portugal national team
+</footer>
+        
+    </body>
