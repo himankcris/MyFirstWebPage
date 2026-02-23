@@ -1,4 +1,4 @@
-# MyFirstWebPage
+# Portfolio page
 Mostly the art of front end skills to create a webpage.
 
 SKILLS USED - HTML,CSS,JAVASCRIPT 
